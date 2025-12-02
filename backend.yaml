@@ -1,5 +1,5 @@
 - name: configuring backend component
-  hosts: local
+  hosts: backend
   become: yes
   tasks:
   - name: disabling default nodejs
