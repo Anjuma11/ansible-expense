@@ -25,7 +25,7 @@
 
   - name: Downloading frontend code
     ansible.builtin.get_url:
-      url:  https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip
+      url: https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip
       dest: /tmp/frontend.zip
       remote_src: yes
 
