@@ -1,5 +1,5 @@
 - name: configuring frontend component
-  hosts:  frontend
+  hosts: frontend
   connection: 
   become: yes
   tasks:
