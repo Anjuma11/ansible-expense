@@ -31,7 +31,7 @@
   - name: extracting the frontend code
     ansible.builtin.unarchive:
       src: /tmp/frontend.zip
-      path: /usr/share/nginx/html
+      dest: /usr/share/nginx/html
       remote_src: yes
 
   - name: copying expense file in path
