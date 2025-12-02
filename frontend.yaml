@@ -1,6 +1,5 @@
 - name: configuring frontend component
-  hosts: frontend
-  connection: 
+  hosts: local
   become: yes
   tasks:
   - name: installing nginx server
