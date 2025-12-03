@@ -18,6 +18,7 @@
       path: /app
       state: directory
 
+
   - name: adding expense user
     ansible.builtin.user:
       name: expense
@@ -39,12 +40,12 @@
   - name: installing dependencies
     community.general.npm:
       path: /app
+      state: present
   
   - name: copying backend service file
     ansible.builtin.copy:
       src: backend.service
       dest: /etc/systemd/system/backend.service
-      
   
   - name: backend daemon reload
     ansible.builtin.systemd_service:
